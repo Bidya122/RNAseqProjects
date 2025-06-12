@@ -70,7 +70,7 @@ alcohol-pregnancy-protein-docking/
 
 **Bidya Rani Mohanty**  
 M.Sc. Microbiology | Aspiring Computational Biologist  
-[LinkedIn](www.linkedin.com/in/bidya-mohanty-33b853257)  | GitHub: [your-username]
+[LinkedIn](www.linkedin.com/in/bidya-mohanty-33b853257)  | GitHub: Bidya122
 
 ---
 
