@@ -47,9 +47,6 @@ alcohol-pregnancy-protein-docking/
 ├── scripts/ # Python or Bash scripts used
 └── docs/ # Literature summaries, figures
 
-yaml
-Copy
-Edit
 
 ---
 
