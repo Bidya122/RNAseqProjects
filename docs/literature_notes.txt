@@ -1,1 +1,11 @@
+Protein: SHH (Sonic Hedgehog)
+Function: Regulates neural tube and craniofacial development by important signalling molecules during embryonic development.
+Reference : PMID: 9205942, PMID: 17237799
 
+Protein: BMP4 (Bone Morphogenetic Protein 4)
+Function: Established roles in early embryonic morphogenesis, particularly in the epiblast.
+Reference : PMCID: PMC10243463, PMCID: PMC9902418
+
+Protein: WNT1
+Function: Cell fate determination, brain/spinal cord development
+Reference : PMID: 25533332, PMID: 32056248
