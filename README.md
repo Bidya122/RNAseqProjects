@@ -16,9 +16,9 @@ This bioinformatics project investigates the molecular impact of ethanol (alcoho
 
 | Protein | Role | UniProt ID |
 |--------|------|------------|
-| SHH (Sonic Hedgehog) | Neural tube and limb patterning | [P49768](https://www.uniprot.org/uniprotkb/P49768) |
-| BMP4 (Bone Morphogenetic Protein 4) | Mesoderm formation, organogenesis | [P12644](https://www.uniprot.org/uniprotkb/P12644) |
-| WNT1 | Cell fate and CNS development | [P04628](https://www.uniprot.org/uniprotkb/P04628) |
+| SHH (Sonic Hedgehog) | Neural tube and limb patterning | 
+| BMP4 (Bone Morphogenetic Protein 4) | Mesoderm formation, organogenesis | 
+| WNT1 | Cell fate and CNS development | 
 
 ---
 
