@@ -14,8 +14,8 @@ This bioinformatics project investigates the molecular impact of ethanol (alcoho
 
 ## 🧬 Target Proteins
 
-| Protein | Role | UniProt ID |
-|--------|------|------------|
+| Protein | Role |
+|--------|------|
 | SHH (Sonic Hedgehog) | Neural tube and limb patterning | 
 | BMP4 (Bone Morphogenetic Protein 4) | Mesoderm formation, organogenesis | 
 | WNT1 | Cell fate and CNS development | 
