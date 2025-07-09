@@ -16,7 +16,7 @@ This project includes quality control, alignment, and gene expression analysis o
 - Gviz (R) – for gene model and coverage plot visualization
 
 ### 📁 File Structure:
-- `Pipeline.docx`: Full step-by-step explanation
+- `linux pipeline.docx`: Full step-by-step explanation
 - `*.bam`, `*.bai`, `*.gtf`: Processed alignment and annotation files
 - `*.fastq`: Raw and trimmed reads
 
