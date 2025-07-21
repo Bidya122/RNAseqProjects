@@ -1,6 +1,6 @@
 # RNA-seq Differential Expression Visualization in R
 
-This project showcases essential RNA-seq data visualizations performed in R using differential expression results from DESeq2.
+This project showcases essential RNA-seq data visualizations performed in R using differential expression results from DESeq2 as learned from Hands-on RNAseq Analysis Training on CATR.
 
 ---
 
