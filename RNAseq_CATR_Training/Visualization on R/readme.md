@@ -12,8 +12,8 @@ This project showcases essential RNA-seq data visualizations performed in R usin
 | `metadata-new.txt` | Sample condition information (e.g., Obese vs Lean) |
 | `DEG_Disease_vs_control.csv` | DESeq2 results for Obese vs Lean comparison |
 | `R_Deseq2_script.txt` | R script used to generate all plots |
-| `volcano_plot.png` | Volcano plot showing significantly differentially expressed genes |
-| `pca_plot.png` | PCA plot showing sample clustering based on expression |
+| `volcano_plot.jpeg` | Volcano plot showing significantly differentially expressed genes |
+| `pca_plot.jpeg` | PCA plot showing sample clustering based on expression |
 | `ma_plot.png` | MA plot showing log2 fold change vs mean expression |
 | `top_genes_plot.png` | Plot labeling the top 10 DEGs |
 
