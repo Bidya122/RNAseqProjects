@@ -1,0 +1,21 @@
+> if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+> BiocManager::install("Gviz")
+> library(Gviz)
+> BiocManager::install("GenomicFeatures")
+> library(GenomicFeatures)
+> BiocManager::install("txdbmaker")
+> library(txdbmaker)
+> getwd()
+##you will get the wd. paste the gtf file in this. 
+> txdb <- makeTxDbFromGFF("chr17.gtf", format = "gtf")
+> axisTrack <- GenomeAxisTrack()
+> txdb <- txdbmaker::makeTxDbFromGFF("C:/Users/HP/Documents/chr17.gtf", format = "gtf")
+> chrom <- "chr17"  
+> start <- 7661779
+> end <- 7687550
+## get sorted.bam file
+> geneTrack <- GeneRegionTrack(txdb, chromosome = chrom, start = start, end = end, name = "TP53 Gene")
+> bamTrack <- AlignmentsTrack("C:/Users/HP/Documents/SRR32105970_TP53_sorted.bam", isPaired = FALSE, name = "Read Coverage")
+> plotTracks(list(axisTrack, geneTrack, bamTrack), chromosome = chrom, from = start, to = end, transcriptAnnotation = "symbol", main = "TP53 Gene Model and Coverage (with Coordinates)")
+
