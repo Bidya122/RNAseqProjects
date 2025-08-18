@@ -34,19 +34,14 @@ featureCounts (Subread) → read quantification
 R (Gviz) → visualization
 
 🚀 Pipeline Steps
-1. Organize project
-shopt -s extglob
-mv !(Handon) Handon/
-
-2. Download dataset
+1. Download dataset
 mv /mnt/c/Users/HP/Downloads/SRR32105970.fastq.gz ~/TP53/
 gunzip SRR32105970.fastq.gz
 
-3. Quality check
+2. Quality check (FastQC)
 fastqc SRR32105970.fastq
 
-4. Adapter trimming
-   
+3. Adapter trimming (Trimmomatic)
 java -jar ~/Trimmomatic-0.39/trimmomatic-0.39.jar SE -phred33 \
  SRR32105970.fastq SRR32105970_trimmed.fastq \
  ILLUMINACLIP:~/Trimmomatic-0.39/adapters/TruSeq3-SE.fa:2:30:10 \
@@ -54,42 +49,28 @@ java -jar ~/Trimmomatic-0.39/trimmomatic-0.39.jar SE -phred33 \
 
 fastqc SRR32105970_trimmed.fastq
 
-5. Build HISAT2 index
+4. Build HISAT2 index
 hisat2-build Homo_sapiens_TP53_sequence.fa TP53_index
 
-6. Align reads
+5. Align reads (HISAT2)
 hisat2 -p 1 -x TP53_index -U SRR32105970_trimmed.fastq -S SRR32105970_TP53.sam
 
-7. Process SAM/BAM
+6. Process SAM/BAM files (Samtools)
 samtools view -Sb SRR32105970_TP53.sam > SRR32105970_TP53.bam
 samtools sort SRR32105970_TP53.bam -o SRR32105970_TP53_sorted.bam
 samtools index SRR32105970_TP53_sorted.bam
 
-8. Quantify reads
+7. Quantify reads (featureCounts)
 featureCounts -a chr17.gtf -o chr17_counts.txt -t exon -g gene_id SRR32105970_TP53_sorted.bam
 samtools idxstats SRR32105970_TP53_sorted.bam
 
-📊 Results
+📝 Notes
 
-~18.6% of reads mapped to chromosome 17 (TP53 region).
+This is my first attempt at an RNA-seq project.
 
-chr17_counts.txt → exon-level read counts.
+For now, the pipeline is documented with Linux commands.
 
-BAM index (.bai) confirms alignment worked.
-
-FastQC reports show improved quality after trimming.
-
-📎 Notes
-
-Raw FASTQ not uploaded — download via SRA accession.
-
-This project demonstrates a mini RNA-seq pipeline on a single gene.
-
-## 📝 Notes
-
-- This is my **first attempt at an RNA-seq project**.  
-- Currently, the pipeline is documented with **Linux commands**.  
-- I plan to add **bash scripts** later on future projects to automate the workflow.  
+I plan to add bash scripts later onto future projects to automate the workflow.
 
 👩‍💻 Author
 
