@@ -78,6 +78,3 @@ I plan to add bash scripts in future projects to automate the workflow.
 Bidya Rani Mohanty
 M.Sc. Microbiology | Bioinformatics & Molecular Biology Enthusiast
 
-yaml
-Copy
-Edit
