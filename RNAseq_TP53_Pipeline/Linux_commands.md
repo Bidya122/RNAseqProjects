@@ -46,6 +46,7 @@ gunzip SRR32105970.fastq.gz
 fastqc SRR32105970.fastq
 
 4. Adapter trimming
+   
 java -jar ~/Trimmomatic-0.39/trimmomatic-0.39.jar SE -phred33 \
  SRR32105970.fastq SRR32105970_trimmed.fastq \
  ILLUMINACLIP:~/Trimmomatic-0.39/adapters/TruSeq3-SE.fa:2:30:10 \
