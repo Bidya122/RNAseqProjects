@@ -16,15 +16,14 @@ cd quast-5.2.0
 
 ---
 
-
-
-🍀 Velvet Installation
+### 🍀 Velvet Installation
+```bash
 sudo apt install velvet
 git clone https://github.com/dzerbino/velvet.git
 cd velvet
 make 'CATEGORIES=2' 'MAXKMERLENGTH=99'
 velveth --help
-
+```
 
 
 
