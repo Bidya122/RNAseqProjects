@@ -12,7 +12,7 @@ wget https://github.com/ablab/quast/releases/download/quast_5.2.0/quast-5.2.0.ta
 tar -xvzf quast-5.2.0.tar.gz
 cd quast-5.2.0
 ./quast.py --help
-
+```
 
 ---
 
