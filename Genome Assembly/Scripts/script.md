@@ -13,6 +13,8 @@ tar -xvzf quast-5.2.0.tar.gz
 cd quast-5.2.0
 ./quast.py --help
 
+---
+
 ## 🧩 Velvet Installation 
 ```bash
 sudo apt install velvet
