@@ -101,6 +101,7 @@ cd SPAdes-3.15.5-Linux
 python3 spades.py –help
 ```
 ##bash script
+Bash script for alignment with Spades using multiple k-mer values and QC with QUAST:
 ```bash
 #!/bin/bash
 
