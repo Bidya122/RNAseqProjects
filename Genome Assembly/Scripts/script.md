@@ -90,4 +90,61 @@ chmod +x velvet_quast_loop.sh
 ./velvet_quast_loop.sh
 ```
 
+### 🍀 Spades Installation
+```bash
+sudo apt update && sudo apt upgrade –y
+sudo apt install build-essential python3 wget –y
+wget https://github.com/ablab/spades/releases/download/v3.15.5/SPAdes-3.15.5-Linux.tar.gz
+tar -xvzf SPAdes-3.15.5-Linux.tar.gz
+cd SPAdes-3.15.5-Linux
+./spades.py –help
+python3 spades.py –help
+```
+##bash script
+```bash
+#!/bin/bash
+
+SPADES=~/SPAdes-3.15.5-Linux/bin/spades.py
+FASTQ=~/SRR32105970.fastq
+QUAST=~/quast-5.2.0/quast.py
+OUTDIR=~/spades_output
+
+kmers="21 31 41 51 61 71 81 91"
+
+for k in $kmers
+do
+    echo "=== Running SPAdes with k=$k ==="
+    $SPADES --only-assembler -s $FASTQ -k $k -o $OUTDIR/spades_k$k -t 2 -m 2
+
+    if [ -f "$OUTDIR/spades_k$k/contigs.fasta" ]; then
+        echo "=== Running QUAST on spades_k$k/contigs.fasta ==="
+        $QUAST $OUTDIR/spades_k$k/contigs.fasta -o $OUTDIR/quast_k$k
+    else
+        echo "!!! contigs.fasta not found for k=$k. Skipping QUAST."
+    fi
+done
+
+echo "All done!"
+
+```
+```bash
+chmod +x spades_quast_loop.sh
+```
+```bash
+./spades_quast_loop.sh
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
