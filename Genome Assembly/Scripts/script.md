@@ -12,18 +12,18 @@ wget https://github.com/ablab/quast/releases/download/quast_5.2.0/quast-5.2.0.ta
 tar -xvzf quast-5.2.0.tar.gz
 cd quast-5.2.0
 ./quast.py --help
- bash``` 
+
 
 ---
 
-## 🧩 Velvet Installation 
-```bash
+
+
+🍀 Velvet Installation
 sudo apt install velvet
 git clone https://github.com/dzerbino/velvet.git
 cd velvet
 make 'CATEGORIES=2' 'MAXKMERLENGTH=99'
 velveth --help
-
 
 
 
