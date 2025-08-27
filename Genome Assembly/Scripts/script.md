@@ -24,6 +24,12 @@ cd velvet
 make 'CATEGORIES=2' 'MAXKMERLENGTH=99'
 velveth --help
 ```
+---
+## velvet execution
+To know the read length :
+```bash
+awk '(NR%4==2){print length($1)}' SRR32105970.fastq | sort -n | uniq –c
+```
 
 
 
