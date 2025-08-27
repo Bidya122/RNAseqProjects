@@ -5,7 +5,7 @@ This document contains all the installation steps, single-run commands, and auto
 ---
 
 ## 📊 QUAST Installation
-Copy code
+'''bash
 
 sudo apt install python3 python3-pip python3-matplotlib python3-numpy -y
 sudo apt install ncbi-blast+ mummer -y
