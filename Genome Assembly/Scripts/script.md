@@ -7,6 +7,7 @@ This document contains all the installation steps, single-run commands, and auto
 
 Copy code
 sudo apt install python3 python3-pip python3-matplotlib python3-numpy -y
+Copy code 
 sudo apt install ncbi-blast+ mummer -y
 wget https://github.com/ablab/quast/releases/download/quast_5.2.0/quast-5.2.0.tar.gz
 tar -xvzf quast-5.2.0.tar.gz
