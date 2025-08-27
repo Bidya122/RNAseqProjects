@@ -31,5 +31,11 @@ To know the read length :
 awk '(NR%4==2){print length($1)}' SRR32105970.fastq | sort -n | uniq –c
 ```
 
-
+For alignment :
+```bash
+time ~/velvet/velveth output_dir 31 -fastq -short SRR32105970.fastq
+~/velvet/velvetg output_dir -exp_cov auto -cov_cutoff auto
+cd output_dir
+ls
+```
 
