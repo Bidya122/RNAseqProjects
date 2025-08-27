@@ -1,6 +1,44 @@
 # Genome Assembly Commands (SPAdes & Velvet)
 
 This document contains all the installation steps, single-run commands, and automated scripts used for running **SPAdes** and **Velvet** genome assemblies, along with evaluation using **QUAST**.
+Project Overview: TP53 cDNA in HCT116 Cancer Cells
+
+Biological Model:
+
+Cell line: HCT116 (human colorectal carcinoma, epithelial, KRAS G13 mutant)
+
+Experimental manipulation: Researchers used multiplexed CRISPR/Cas9-nickase to induce precise single-strand DNA breaks and blocked repair with PARP inhibitors, targeting TP53 or its regulatory network (Lee et al., 2024
+).
+
+Purpose: Trigger cancer cell death in a cell-type-specific manner while minimizing off-target effects in normal cells.
+
+Experimental Design:
+
+Sample type: TP53 cDNA from HCT116 cells post-treatment/editing.
+
+Library prep: Nextera DNA Library Prep.
+
+Sequencing: Illumina iSeq 100, single-run: 13,530 spots, 4.1 M bases (~1.4 Mb download).
+
+Study: Efficient and precise targeting of cancer cells using multiplexed CRISPR/Cas9-nickase and PARP inhibitors.
+
+Submitted by: Lee et al., 2024.
+
+Project accession: PRJNA1109424, SRA: SRP506582.
+
+Data Context:
+
+The dataset likely captures TP53 mRNA transcripts (cDNA) after genome editing and/or PARP inhibitor treatment.
+
+Intended for downstream expression profiling, functional validation, or computational analysis of targeted TP53 pathways.
+
+Computational Analysis:
+
+Data: SRR32105970.fastq (single-end Illumina reads).
+
+Assembly & QC: Velvet multi-k assembly (k = 21, 31, 41, etc.) + QUAST.
+
+Goal: Generate the most accurate TP53 transcript assembly for downstream analyses.
 
 ---
 
